@@ -1,10 +1,31 @@
 .Navigation{
     width: 100%;
     height: 150px;
-    background-color:#869893;
+    background-color:#408E2F;
 }
 
 .ImageLogo{
     width: 100px;
     height: 100px;
+}
+
+.NameSite{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: xx-large;
+    color: white;
+}
+
+.Forget{
+    font-size: 0.8rem;
+    color:blue;
+}
+
+.Forget:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 850px) {
+    .SignIn{
+        display: none;
+    }
 }
