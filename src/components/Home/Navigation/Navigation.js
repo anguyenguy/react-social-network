@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
 
-const navigation = () => {
+const navigation = (props) => {
     return(
         <div className="Navigation d-flex align-items-center justify-content-around">
             <img className="ImageLogo ml-5" alt="hinh" src="../src/assets/logo.png"/>
@@ -18,7 +18,7 @@ const navigation = () => {
                         <div><span className="Forget mt-3 text-white-50">Quên tài khoản</span></div>
                     </div>
                     <div className="d-flex align-items-center ml-3">
-                        <button type="button" className="btn btn-info">Đăng nhập</button>
+                        <button onClick={props.clickA} type="button" className="btn btn-info">Đăng nhập</button>
                     </div>
                     
                 </div>                

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-
-import Home from './components/Home/Home';
-
+import Home from './containers/Home/Home';
+import {connect} from 'react-redux';
 
 class App extends Component {
     
@@ -11,11 +10,24 @@ class App extends Component {
         return (
             <div>
                 <div>
-                    <Route path="/" exact component={Home} />
+                    {
+                        this.props.isSignin
+                        ?<div>You are accessing...</div>
+                        :<Route path="/" exact component={Home} />
+                    }
+                    
                 </div>
             </div>
         );
     }
 }
 
-export default App;
+const mapStateToProps = state => {
+    return{
+        isSignin: state.isSignin
+    };
+}
+
+
+
+export default connect(mapStateToProps)(App);

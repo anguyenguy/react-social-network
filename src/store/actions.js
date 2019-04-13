@@ -1,0 +1,1 @@
+export const CLICK_SIGNIN = "CLICKSIGNIN";
