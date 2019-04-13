@@ -9,12 +9,12 @@ const navigation = (props) => {
             <div className="SignIn d-flex">
                 <div className="AccountLogin ml-3">
                     <div><span className="text-white">Email hoặc điện thoại</span></div>
-                    <input></input>
+                    <input onChange={value =>props.changeEmail(value)}></input>
                 </div>
                 <div className="PasswordLogin ml-3 d-flex">
                     <div>
                         <div><span className="text-white">Mật khẩu</span></div>
-                        <input></input>
+                        <input onChange={value=>props.changePassword(value)}></input>
                         <div><span className="Forget mt-3 text-white-50">Quên tài khoản</span></div>
                     </div>
                     <div className="d-flex align-items-center ml-3">

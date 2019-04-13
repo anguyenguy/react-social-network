@@ -1,1 +1,2 @@
 export const CLICK_SIGNIN = "CLICKSIGNIN";
+export const CHANGE_ACCOUNT = "CHANGEACCOUNT";
